@@ -17,9 +17,9 @@ public class koneksi {
     
     public static void koneksi(){
         try{
-            String url = "jdbc:mysql://localhost/db_perusahaan_manufaktur";
+            String url = "jdbc:mysql://localhost:5000/db_perusahaan_manufaktur";
             String user = "root";
-            String pw = "";
+            String pw = "092004";
             con = DriverManager.getConnection(url, user, pw);
             stat = con.createStatement();
             System.out.println("Koneksi Berhasil Cuy");
